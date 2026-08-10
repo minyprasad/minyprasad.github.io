@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sumit Space</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Top Banner */
+        .banner {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #1565c0;
+        }
+
+        /* Trip Cards */
+        .trips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .trip-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #1565c0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .trip-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .trip-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1565c0;
+        }
+
+        .trip-date {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .trip-card p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            padding: 25px;
+            background-color: #e8eef7;
+            color: #666;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            .banner p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+        }
+        .tickets-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.tickets-section h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.ticket-button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.ticket-button:hover {
+    background-color: #0d47a1;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Banner -->
+    <header class="banner">
+        <h1>Welcome to miniprasad Space</h1>
+        <p>A virtual home for the family.</p>
+    </header>
+
+    <!-- Upcoming Trips -->
+    <main class="container">
+
+        <h2 class="section-title">Upcoming Trips</h2>
+
+        <section class="trips">
+
+            <!-- Trip 1 -->
+            <div class="trip-card">
+                <h3>Trip to Jamshedpur</h3>
+                <div class="trip-date">August 27 - August 30</div>
+                <p>
+                    An upcoming trip to Jamshedpur.
+                </p>
+              
+                <div class="tickets-section">
+                    <h4>Tickets</h4>
+            
+                    <a href="pnbe-jmsp.jpeg" target="_blank" class="ticket-button">
+                        Onward Journey
+                    </a>
+            
+                    <a href="jmsp-pnbe.jpeg" target="_blank" class="ticket-button">
+                        Return Journey
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trip 2 -->
+            <div class="trip-card">
+                <h3>Trip to Arunachal</h3>
+                <div class="trip-date">October 17 - October 24</div>
+                <p>
+                    An upcoming trip to Arunachal Pradesh.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sumit Space</p>
+    </footer>
+
+</body>
+</html>
