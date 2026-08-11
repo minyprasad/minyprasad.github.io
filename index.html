@@ -22,20 +22,43 @@
 
         /* Top Banner */
         .banner {
-            background-color: #1565c0;
+            background-image: url("IMG20260530162520.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
             color: white;
             text-align: center;
-            padding: 45px 20px;
+            padding: 80px 20px;
+
+            position: relative;
+        }
+
+        /* Dark overlay */
+        .banner::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        /* Keep text above overlay */
+        .banner h1,
+        .banner p {
+            position: relative;
+            z-index: 1;
         }
 
         .banner h1 {
             font-size: 42px;
             margin-bottom: 8px;
+            color:aqua
         }
 
         .banner p {
             font-size: 18px;
             opacity: 0.9;
+            color: aqua;
         }
 
         /* Main Content */
